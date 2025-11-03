@@ -1,5 +1,3 @@
-// Write a program which accept a number from the user and display all its non-factors
-
 ////////////////////////////////////////////////////////////////////////////////////////
 // 
 // Required Header files
@@ -55,4 +53,5 @@ int main()
     printf("Summation of the non-factors is: %d", iRet);    
 
     return 0;
+
 }
