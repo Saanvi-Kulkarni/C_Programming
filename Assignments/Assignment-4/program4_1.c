@@ -1,0 +1,57 @@
+////////////////////////////////////////////////////////////////////////////////////////
+// 
+// Required Header files
+// 
+////////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+////////////////////////////////////////////////////////////////////////////////////////
+//
+// Function Name : MultFact
+// Description : It is used to Accept a no from user & display its multiplication factors
+// Input : Integer
+// Output : Integer
+// Author : Saanvi Anand Kulkarni
+// Date : 20/10/2025
+//
+////////////////////////////////////////////////////////////////////////////////////////
+
+int MultFact(int iNo)
+{
+    int iCnt = 0;
+    int iAns = 1;
+
+    for(iCnt = 1; iCnt <= (iNo/2); iCnt++)
+    {
+        if(iNo % iCnt == 0)
+        {
+            //printf("%d\n", iCnt);
+            iAns = iAns * iCnt;
+        }
+    
+    }
+
+    return iAns;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////
+//
+// Entry Point Function of the application
+//
+////////////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue = 0;
+    int iRet = 0;
+
+    printf("Enter a number: \t");
+    scanf("%d", &iValue);
+
+    iRet = MultFact(iValue);
+
+    printf("Multiplication of Factors is: %d", iRet);
+
+    return 0;
+}
