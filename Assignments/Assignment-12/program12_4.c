@@ -38,6 +38,8 @@ int SumFactors(int iNo)
     return iFactorAddition;
 }
 
+// Time Complexity = O(N/2)
+
 ////////////////////////////////////////////////////////////////////////////////////////
 //
 // Entry Point Function of the application
@@ -58,3 +60,4 @@ int main()
 
     return 0;
 }
+
